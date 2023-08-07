@@ -2,13 +2,10 @@
   "name": "food-app",
   "version": "1.0.0",
   "description": "",
-  "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nilesh0205/F00dApp.git"
   },
   "author": "Nilesh Patil",
   "license": "ISC",
@@ -17,6 +14,16 @@
   },
   "homepage": "https://github.com/nilesh0205/F00dApp#readme",
   "dependencies": {
-    "parcel": "^2.9.3"
-  }
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 chrome versions"
+  ]
 }
