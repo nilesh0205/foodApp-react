@@ -16,8 +16,8 @@ const Body=()=>{
   const [searchText, setSearchText]=useState();
 
   useEffect(()=>{
-    console.log("call this when dependency is changed");
-  },[restaurants])
+    console.log("call this when dependency is ");
+  },[])
 
   ;
     return(
