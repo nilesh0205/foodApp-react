@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import { restaurantList } from "../containts";
 import RestrauntCard from "./RestrauntCard";
 
@@ -14,6 +14,12 @@ const Body=()=>{
   const [restaurants,setRestaurants]=useState(restaurantList);  
  
   const [searchText, setSearchText]=useState();
+
+  useEffect(()=>{
+    console.log("call this when dependency is changed");
+  },[restaurants])
+
+  ;
     return(
       <>
       <div className="search-container" >

@@ -1,3 +1,5 @@
+ import {useState} from "react";
+ 
  const Title=()=>(
     <a href="/">
 <img 
@@ -9,9 +11,12 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABOFBMV
 );
 
 const Header=()=>{
+    const [title,setTitle]=useState("Food Villa");
     return(
         <div className="header">
            <Title/>
+           {title}
+           <button onClick={()=>setTitle("New Food Villa App")}>change title</button>
           <div className="nav-items">
            <ul>
             <li>Home</li>
